@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS znamky(
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	
+	znamka FLOAT,
+	
+	student_id INTEGER,
+	FOREIGN KEY (student_id) REFERENCES student(ID)
+);
